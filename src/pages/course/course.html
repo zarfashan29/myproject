@@ -1,0 +1,38 @@
+<!--
+  Generated template for the CoursePage page.
+
+
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>course</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+      
+    <ion-item>
+      <ion-label floating>First Name</ion-label>
+  
+      <ion-input type="text" value=""[(ngModel)]=firstname></ion-input>
+
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Last Name</ion-label>
+
+    <ion-input type="text" value=""[(ngModel)]=lastname></ion-input>
+
+</ion-item>
+  <ion-item>
+      <ion-label floating>password</ion-label>
+    <ion-input type="password" value=""[(ngModel)]="password"></ion-input>
+</ion-item>
+</ion-list>
+  <button ion-button full (click)="register()">"Register"
+   </button>
+
+</ion-content>

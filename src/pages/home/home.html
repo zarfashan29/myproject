@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      "Welcome to developer point"
+
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+    <ion-list>
+  
+    <ion-item>
+      <ion-label floating>Account name</ion-label>
+  
+      <ion-input type="text" value=""[(ngModel)]="account"></ion-input>
+
+  </ion-item>
+  <ion-item>
+      <ion-label floating>password</ion-label>
+    <ion-input type="password" value=""[(ngModel)]="password"></ion-input>
+</ion-item>
+</ion-list>
+
+
+  <!-- <button ion-button full (click)="login()">"Signup" -->
+  <!-- </button> -->
+  <button ion-button full (click)="login()">
+    <ion-icon name="home"></ion-icon>
+  </button>
+  
+</ion-content>
